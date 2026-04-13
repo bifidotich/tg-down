@@ -1,7 +1,7 @@
 # Telegram Media Downloader Bot
 
 ```
-docker build -t media_bot .
+docker build -t tg-down .
 
 docker run -d `
   --name tg-down `
@@ -13,4 +13,4 @@ docker run -d `
 ```
 
 Поддержка Instagram (Cookies)
-cookies.txt из браузера добавить через: -v ${PWD}/cookies.txt:/app/cookies.txt:ro
+cookies.txt из браузера добавить через: -v ./cookies.txt:/app/cookies.txt:ro
