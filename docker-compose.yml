@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  tg-down:
+    build: .
+    container_name: tg-down
+    restart: unless-stopped
+    volumes:
+      - ./downloads:/app/downloads
