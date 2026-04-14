@@ -23,7 +23,7 @@ os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
 
-# Регулярные выражения
+# Фильтры
 YT_PATTERN = r'^(https?\:\/\/)?(www\.)?(youtube\.com|youtu\.?be)\/.+$'
 TT_PATTERN = r'^(https?\:\/\/)?(www\.)?((vt|vm)\.)?tiktok\.com\/.+$'
 IG_PATTERN = r'^(https?\:\/\/)?(www\.)?(instagram\.com)\/.+$'
