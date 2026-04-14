@@ -25,8 +25,8 @@ dp = Dispatcher()
 
 # Регулярные выражения
 YT_PATTERN = r'^(https?\:\/\/)?(www\.)?(youtube\.com|youtu\.?be)\/.+$'
-TT_PATTERN = r'^(https?\:\/\/)?(www\.)?(tiktok\.com|vm\.tiktok\.com)\/.+$'
-IG_PATTERN = r'^(https?\:\/\/)?(www\.)?(instagram\.com)\/.+$'  # Добавлен Instagram
+TT_PATTERN = r'^(https?\:\/\/)?(www\.)?((vt|vm)\.)?tiktok\.com\/.+$'
+IG_PATTERN = r'^(https?\:\/\/)?(www\.)?(instagram\.com)\/.+$'
 
 
 def is_valid_url(url: str) -> bool:
