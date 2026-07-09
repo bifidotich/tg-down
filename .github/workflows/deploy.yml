@@ -20,4 +20,9 @@ jobs:
           script: |
             cd ${{ secrets.DEPLOY_PATH }}
             git pull
-            docker compose up -d --build
+            docker build -t tg-down .
+            docker rm -f tg-down || true
+            docker run -d --name tg-down --restart unless-stopped \
+              -e BOT_TOKEN="$BOT_TOKEN" \
+              -v "$(pwd)/downloads:/app/downloads" \
+              tg-down
