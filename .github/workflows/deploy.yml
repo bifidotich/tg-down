@@ -17,6 +17,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           envs: BOT_TOKEN
+          command_timeout: 30m
           script: |
             cd ${{ secrets.DEPLOY_PATH }}
             git pull
